@@ -28,3 +28,5 @@ A web-based Smart Booking System designed to help small businesses eliminate man
 1. Clone the repo: `git clone [repository-link]`
 2. Install dependencies: `npm install`
 3. Start the server: `npm start`
+
+## Added Timeline Milestones to documentation
