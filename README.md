@@ -12,7 +12,7 @@
 ## 📋 Project Description
 A web-based Smart Booking System designed to help small businesses eliminate manual scheduling errors, prevent double-bookings, and provide a streamlined admin dashboard for appointment management.
 
-## 🛠️ Tech Stack
+## Redifined Tech Stack list
 - **Frontend:** HTML5, CSS3, JavaScript
 - **Backend:** Node.js, Express.js
 - **Database:** MySQL
