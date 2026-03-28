@@ -1,0 +1,229 @@
+.step3-container {
+  padding: 0 1rem;
+}
+
+.datetime-header-col {
+  margin-bottom: 3rem;
+}
+
+.datetime-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+/* Calendar Card */
+.calendar-card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+  border: 1px solid #f9f9f9;
+  height: fit-content;
+}
+
+.calendar-header h3 {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #111;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1rem;
+  text-align: center;
+}
+
+.cal-day-header {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #888;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.cal-day {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 0.95rem;
+  color: #111;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.cal-day:hover:not(.empty):not(.selected) {
+  background-color: #f0f0f0;
+}
+
+.cal-day.empty {
+  color: #ccc;
+  cursor: default;
+}
+
+.cal-day.selected {
+  background-color: #df4478;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(223, 68, 120, 0.3);
+}
+
+/* Times Summary Col */
+.available-times-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.available-times-header::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 24px;
+  background-color: #df4478;
+}
+
+.available-times-header h2 {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  color: #111;
+}
+
+.time-section {
+  margin-bottom: 2rem;
+}
+
+.time-section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #777;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.time-section-title svg {
+  width: 14px;
+  height: 14px;
+}
+
+.time-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.time-pill {
+  background-color: #f4f4f4;
+  color: #333;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.time-pill:hover:not(.selected) {
+  background-color: #e5e5e5;
+}
+
+.time-pill.selected {
+  background-color: #0b0c10;
+  color: #fff;
+}
+
+.time-pill.faded {
+  opacity: 0.5;
+}
+
+/* Selected Details Card */
+.selected-details-card {
+  background-color: #0b0c10;
+  border-radius: 20px;
+  padding: 2.5rem;
+  margin-top: 3rem;
+  color: #fff;
+}
+
+.sd-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.sd-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.sd-icon {
+  color: #df4478;
+  margin-top: 0.2rem;
+}
+
+.sd-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.sd-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #888;
+  letter-spacing: 1px;
+}
+
+.sd-value {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.sd-confirm-btn {
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.sd-confirm-btn:hover {
+  transform: translateY(-2px);
+  background-color: #c73766;
+}
+
+@media (max-width: 968px) {
+  .datetime-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .calendar-card {
+    padding: 1.5rem;
+  }
+  .cal-day {
+    width: 32px;
+    height: 32px;
+  }
+}

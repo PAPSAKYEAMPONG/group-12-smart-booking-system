@@ -1,0 +1,120 @@
+.booking-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  min-height: 60vh;
+}
+
+.progress-container {
+  margin-bottom: 6rem;
+  display: flex;
+  justify-content: center;
+}
+
+.progress-steps {
+  display: flex;
+  align-items: center;
+}
+
+.step-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: relative;
+}
+
+.step-circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #ededed;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.step-circle.active {
+  background-color: #df4478;
+  color: #fff;
+}
+
+.step-label {
+  font-size: 0.85rem;
+  color: #888;
+  font-weight: 500;
+  position: absolute;
+  top: 55px;
+  white-space: nowrap;
+}
+
+.step-label.active-label {
+  color: #111;
+  font-weight: 600;
+}
+
+.step-line {
+  width: 60px;
+  height: 3px;
+  background-color: #ededed;
+  margin: 0 1rem;
+  align-self: flex-start;
+  margin-top: 21px;
+}
+
+.step-line.active-line {
+  background-color: #df4478;
+}
+
+.booking-content {
+  background: #fff;
+  border-radius: 12px;
+}
+
+/* Mobile Responsiveness for Progress Bar */
+@media (max-width: 768px) {
+  .progress-container {
+    margin-bottom: 5rem;
+  }
+  .step-circle {
+    width: 35px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+  .step-label {
+    font-size: 0.7rem;
+    top: 45px;
+  }
+  .step-line {
+    width: 35px;
+    margin: 0 0.5rem;
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking-container {
+    padding: 2rem 1rem;
+  }
+  .progress-container {
+    margin-bottom: 4rem;
+  }
+  .step-circle {
+    width: 28px;
+    height: 28px;
+    font-size: 0.75rem;
+  }
+  .step-label {
+    font-size: 0.55rem;
+    top: 35px;
+  }
+  .step-line {
+    width: 15px;
+    margin: 0 0.3rem;
+    margin-top: 13px;
+  }
+}
