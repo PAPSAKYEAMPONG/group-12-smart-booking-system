@@ -1,16 +1,32 @@
-# React + Vite
+# Group 12 - Smart Booking & Reservation System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 👥 Team Members
+* Sheila Yoyowah (22019050)
+* Nesta Nketiah (22055131)
+* Akyeampong Papa Kwadwo Ankama (22060947)
+* Blessing Owusu Frema (22108048)
+* Mensah Vera Konadu Frimpong (22201032)
+* Andy Adjei Berkoh (22026769)
+* Godwin Odoom (22189192)
 
-Currently, two official plugins are available:
+## 📋 Project Description
+A web-based Smart Booking System designed to help small businesses eliminate manual scheduling errors, prevent double-bookings, and provide a streamlined admin dashboard for appointment management.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Redifined Tech Stack list
+- **Frontend:** HTML5, CSS3, JavaScript
+- **Backend:** Node.js, Express.js
+- **Database:** MySQL
+- **Design:** Figma
 
-## React Compiler
+## 📂 Project Structure
+- `/client` - Frontend files (HTML, CSS, JS)
+- `/server` - Node/Express API routes
+- `/database` - SQL Schema and connection scripts
+- `/docs` - System requirements and presentation slides
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 How to Run
+1. Clone the repo: `git clone [repository-link]`
+2. Install dependencies: `npm install`
+3. Start the server: `npm start`
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Added Timeline Milestones to documentation
