@@ -1,0 +1,383 @@
+/* src/pages/Admin/Overview.css */
+.overview-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Metrics Row */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.metric-card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+}
+
+.dark-metric {
+  background-color: #0b0c10;
+  color: #fff;
+}
+
+.metric-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.metric-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.metric-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.metric-icon svg {
+  width: 14px;
+  height: 14px;
+}
+
+.pink-icon {
+  background-color: #ffe6ee;
+  color: #df4478;
+}
+
+.dark-icon {
+  background-color: rgba(255,255,255,0.1);
+  color: #fff;
+}
+
+.gray-icon {
+  background-color: #f0f0f0;
+  color: #666;
+}
+
+.metric-value {
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.percent-sign {
+  font-size: 1.5rem;
+  color: #888;
+  margin-left: 0.2rem;
+}
+
+.metric-bottom {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.trend {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.trend.positive {
+  color: #df4478;
+}
+
+.trend-label {
+  font-size: 0.65rem;
+  color: #999;
+  letter-spacing: 0.5px;
+}
+
+.progress-container {
+  width: 100%;
+}
+
+.progress-bar-bg {
+  width: 100%;
+  height: 6px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #df4478;
+  border-radius: 10px;
+}
+
+/* Content Grid */
+.content-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.bookings-panel {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.panel-header h3 {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 400;
+  margin: 0;
+}
+
+.view-all-link {
+  color: #df4478;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.bookings-table {
+  width: 100%;
+}
+
+.table-header {
+  display: flex;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #888;
+  letter-spacing: 1px;
+}
+
+.th-customer, .td-customer { flex: 2; }
+.th-service, .td-service { flex: 2; }
+.th-time, .td-time { flex: 1; }
+.th-specialist, .td-specialist { flex: 1.5; }
+.th-action, .td-action { width: 40px; display: flex; justify-content: center; }
+
+.table-row {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #f9f9f9;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.td-customer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.customer-badge {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.badge-pink { background-color: #f7e6e9; color: #df4478; }
+.badge-dark { background-color: #111; color: #fff; }
+.badge-gold { background-color: #fcf1de; color: #b78a48; }
+.badge-lightpink { background-color: #fb8db4; color: #fff; }
+
+.customer-name {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #111;
+}
+
+.td-service {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.td-time {
+  font-size: 0.9rem;
+  color: #111;
+}
+
+.td-specialist {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 0.9rem;
+  color: #111;
+}
+
+.specialist-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.action-menu-btn {
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 1.5rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* Right Panel */
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.performance-card {
+  background-color: #faf8f5;
+  border-radius: 20px;
+  padding: 2.5rem;
+}
+
+.performance-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+.staff-stat {
+  margin-bottom: 1.5rem;
+}
+
+.stat-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.staff-name {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #111;
+}
+
+.staff-val {
+  font-size: 0.65rem;
+  color: #888;
+}
+
+.staff-progress-bg {
+  height: 4px;
+}
+
+/* ----------- RESPONSIVE MEDIA QUERIES ----------- */
+@media (max-width: 1200px) {
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .metrics-grid {
+    grid-template-columns: 1fr;
+  }
+  .metric-value {
+    font-size: 3.5rem;
+  }
+  .table-header {
+    display: none;
+  }
+  .table-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #fafafa;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    border: none;
+  }
+  .th-action, .td-action {
+    display: none;
+  }
+  .bookings-panel {
+    padding: 1.5rem;
+  }
+  .performance-card {
+    padding: 1.5rem;
+  }
+}
+
+.insight-card {
+  background-color: #0b0c10;
+  border-radius: 20px;
+  padding: 3rem 2.5rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.insight-label {
+  font-size: 0.65rem;
+  color: #df4478;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.insight-text {
+  font-family: var(--font-heading);
+  font-size: 2.1rem;
+  line-height: 1.1;
+  font-style: italic;
+  margin-bottom: 3.5rem;
+  margin-top: 0;
+}
+
+.insight-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.insight-link svg {
+  width: 16px;
+  height: 16px;
+}
