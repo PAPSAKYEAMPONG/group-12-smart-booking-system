@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import toast from 'react-hot-toast';
 import './Step5Review.css';
 import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../../firebase';
@@ -19,10 +20,13 @@ const Step5Review = ({ bookingData, onConfirm }) => {
         status: 'pending'
       });
       setIsSubmitting(false);
+      toast.success('Booking confirmed! We look forward to seeing you.', {
+        duration: 5000,
+      });
       onConfirm();
     } catch (error) {
       console.error("Error creating booking:", error);
-      alert("There was an error securing your appointment. Please check your connection and try again.");
+      toast.error("There was an error securing your appointment. Please try again.");
       setIsSubmitting(false);
     }
   };
