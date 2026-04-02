@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import toast from 'react-hot-toast';
 import './Step4Details.css';
 
 const Step4Details = ({ bookingData, onNext }) => {
@@ -17,6 +18,7 @@ const Step4Details = ({ bookingData, onNext }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (formData.firstName && formData.lastName && formData.email) {
+      toast.success('Details saved! Let\'s review your booking.');
       onNext(formData);
     }
   };

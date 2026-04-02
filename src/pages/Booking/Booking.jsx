@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Booking.css';
 import Step1Service from './Step1Service';
 import Step2Specialist from './Step2Specialist';
@@ -15,6 +16,7 @@ const STEPS = [
 ];
 
 const Booking = () => {
+  const navigate = useNavigate();
   const [currentStep, setCurrentStep] = useState(1);
   const [bookingData, setBookingData] = useState({
     service: null,
@@ -112,9 +114,8 @@ const Booking = () => {
           <Step5Review 
             bookingData={bookingData} 
             onConfirm={() => {
-              alert('Thank you! Your GraceSalon bespoke appointment is confirmed.');
-              // In a real app we'd trigger an API call and navigate to a success summary/home.
-              window.location.href = '/';
+              // The success toast is handled inside Step5Review
+              navigate('/');
             }}
           />
         )}
