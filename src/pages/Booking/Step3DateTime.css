@@ -1,5 +1,6 @@
 .step3-container {
   padding: 0 1rem;
+  overflow-x: hidden;
 }
 
 .datetime-header-col {
@@ -220,10 +221,31 @@
 
 @media (max-width: 640px) {
   .calendar-card {
-    padding: 1.5rem;
+    padding: 1.2rem;
   }
   .cal-day {
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
+    font-size: 0.85rem;
+  }
+  .calendar-grid {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .step3-container {
+    padding: 0 0.5rem;
+  }
+  .calendar-card {
+    padding: 1rem 0.8rem;
+  }
+  .cal-day {
+    width: 24px;
+    height: 24px;
+    font-size: 0.75rem;
+  }
+  .calendar-grid {
+    gap: 0.25rem;
   }
 }

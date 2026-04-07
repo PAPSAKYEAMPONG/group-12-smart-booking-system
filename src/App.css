@@ -405,12 +405,26 @@
     order: -1;
   }
 
-  .wcu-header {
-    margin-bottom: 2rem;
-  }
-
   .wcu-title {
     font-size: 2.5rem;
+  }
+
+  .navbar {
+    padding: 1.5rem 0;
+    gap: 1rem;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .appointment-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+    flex-shrink: 0;
   }
 }
 
