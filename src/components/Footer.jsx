@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-top">
           <div className="footer-brand">
-            <h3>Salon</h3>
+            <h3>Frema Beauty Salon</h3>
             <p>Your destination where beauty dreams come to life. Excellence combined with passion.</p>
           </div>
 
@@ -36,7 +36,7 @@ const Footer = () => {
               <li>123 Beauty Blvd, Suite 100</li>
               <li>Accra Ghana</li>
               <li>055-123-4567</li>
-              <li>hello@salon.com</li>
+              <li>fremabeautysalon@gmail.com</li>
             </ul>
           </div>
         </div>

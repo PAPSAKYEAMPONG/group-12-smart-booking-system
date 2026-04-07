@@ -132,7 +132,7 @@ const Home = () => {
             <section className="why-choose-us" id="why-choose-us">
                 <div className="wcu-header">
                     <span className="wcu-subtitle">Why Choose Us</span>
-                    <h2 className="wcu-title">Choosing Salon: Your<br />Path to Radiance</h2>
+                    <h2 className="wcu-title">Choosing Frema Beauty Salon: Your<br />Path to Radiance</h2>
                 </div>
 
                 <div className="wcu-grid">

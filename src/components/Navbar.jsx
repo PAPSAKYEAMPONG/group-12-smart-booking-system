@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="logo"><Link to="/" style={{color: 'inherit', textDecoration: 'none'}}>Salon</Link></div>
+      <div className="logo"><Link to="/" style={{color: 'inherit', textDecoration: 'none'}}>Frema Beauty Salon</Link></div>
       <div className="nav-links">
         <Link to="/">Home</Link>
         <a href="/#services">Services</a>

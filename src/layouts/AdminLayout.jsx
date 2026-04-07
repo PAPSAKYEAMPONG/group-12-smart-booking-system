@@ -35,7 +35,7 @@ const AdminLayout = () => {
   } else if (path.includes('services')) {
     pageTitle = 'Services';
   } else if (path.includes('overview') || path === '/admin') {
-    pageTitle = 'Good morning, Elena';
+    pageTitle = 'Good morning, Frema';
     pageDate = 'Here is what is happening at The Digital Atelier today.';
   }
 
@@ -98,7 +98,7 @@ const AdminLayout = () => {
 
             <div className="user-profile">
               <div className="user-info hidden-mobile">
-                <strong>Elena Rossi</strong>
+                <strong>Frema</strong>
                 <span>SALON MANAGER</span>
               </div>
               <img src="/Images/Member1.jpg" alt="Profile" className="profile-img" />
